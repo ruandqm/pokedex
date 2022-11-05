@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navBar {
+    background-color: rgb(107, 248, 158);
+    height: 5em;
+    width: 100vw;
+}
+.logo {
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.navOptions {
+    width: 100%;
+    font-size: 2em;
+    position: absolute;
+    top: 0.7em;
+    left: 25em;
+}
+.searchSection{
+    background-color: rgb(186, 245, 68);
+    height: 5em;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 2em;
+    color: #000;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+a:hover {
+    transition-duration: 0.5s;
+    padding: 0.5%;
+    background-color: #eed15e;
+}
+.navOptions2 {
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 2em;
+    
+    
+}
+
+
+body {
+    background-color: aqua;
+}
+.container{
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    justify-content:space-between;
+    width: 270px;
+    background-color: rgb(68, 198, 254);
+    padding: 2em;
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+.pokemon {
+    background-color: #fff;
+    padding: 1em;
+    
+}
+.pokemon img{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.content:hover {
+    transition-duration: 0.5s;
+width: 500px;
+}
+
