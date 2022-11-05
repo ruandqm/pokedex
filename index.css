@@ -1,88 +1,69 @@
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-}
+/*Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
+/*CSS Reset*/
+* {
     margin: 0;
     padding: 0;
-    font-weight: normal;
+    box-sizing: border-box;
 }
 
-ol,
 ul {
     list-style: none;
 }
 
-body {
-    overflow: hidden;
-}
-
-.container {
-    width: 100vh;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.navBar {
-    background-color: rgb(148, 253, 218);
-    height: 5em;
-    width: 100vw;
-}
-
-.logo {
-    margin-top: 2vh;
-    margin-left: 2vw;
-}
-
-.navOptions {
-    width: 100%;
-    font-size: 2em;
-    position: absolute;
-    top: 0.7em;
-    left: 25em;
-}
-
 a {
     text-decoration: none;
-    margin-left: 2em;
     color: #000;
-    cursor: pointer;
-    border-radius: 0.5em;
 }
 
-a:hover {
-    transition-duration: 0.5s;
-    padding: 0.5%;
-    background-color: #eed15e;
-}
-
+/*General Page Style Setings*/
 body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
     background-color: #add8e6;
 }
 
+/*Navbar*/
+
+.navbar {
+    background-color: rgb(148, 253, 218);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.navLinks {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.navLinks li {
+    margin-left: 2em;
+}
+
+.navLink {
+    border-radius: 0.2em;
+    transition-duration: 0.3s;
+}
+
+.navLink:hover {
+    transition-duration: 0.3s;
+    padding: 0.3em;
+    background-color: #ebd272;
+}
+
+/*Content*/
+
 .content {
     display: flex;
+    width: 90vw;
+    margin: 0 auto;
     justify-content: center;
-    width: 100vw;
+    margin-top: 1em;
 }
 
 .pokemon {
@@ -91,15 +72,19 @@ body {
     margin: 1em;
     border-radius: 1em;
     cursor: pointer;
+    transition-duration: 0.5s;
+    flex: 0 1 20vw;
 }
 
 .pokemon:hover {
     transition-duration: 0.5s;
     padding: 2em;
+    background-color: #ffea8b;
 }
 
+/*Media Queries
 @media screen and (max-width: 1000px) {
     .content {
         display: grid;
     }
-}
+}*/
