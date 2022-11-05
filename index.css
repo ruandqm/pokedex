@@ -18,3 +18,9 @@ body {
     padding: 1em;
     margin: 1em;
 }
+
+@media screen and (max-width: 1000px){
+    .content{
+        display: grid;
+    }
+}
