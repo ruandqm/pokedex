@@ -1,0 +1,292 @@
+/*Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*General Page Style Setings*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    background-color: #add8e6;
+}
+
+/*Navbar*/
+
+.navbar {
+    background-color: rgb(148, 253, 218);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.navLinks {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.navLinks li {
+    margin-left: 2em;
+}
+
+.navLink {
+    border-radius: 0.2em;
+    transition-duration: 0.3s;
+}
+
+.navLink:hover {
+    transition-duration: 0.3s;
+    padding: 0.3em;
+    background-color: #ebd272;
+}
+
+/* 2nd NavBar */
+
+.secondNavbar {
+    width: 100vw;
+    height: 10vh;
+    background-color: #adff2f;
+
+}
+
+.secondNavLinks {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.secondNavLinks li {
+    margin-top: 2.5vh;
+}
+
+/*Content*/
+
+.content {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.pokemonInfos {
+    height: 350px;
+    width: 350px;
+    background-color: #30a7d7;
+    margin: 0 auto;
+    border-radius: 1em;
+    margin-top: 5vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% 30%;
+    grid-template-areas:
+    "pokemon text text"
+    "pokemon coluna1 coluna2"
+    "pokemon coluna1 coluna2"
+}
+
+.pokemonInfos:hover {
+    justify-content: left;
+    width: 45em;
+    transition-duration: 0.5s;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35% 30%;
+    grid-template-areas:
+    "pokemon text text"
+    "pokemon column1 column2"
+    "pokemon column3 column4"
+}
+
+.pokemon img {
+    margin-top: 1em;
+    margin-left: 1em;
+    background-color: white;
+    border-radius: 1em;
+    grid-area: pokemon;
+}
+
+.pokemonText {
+    margin:1em;
+    font-size: larger;
+    grid-area: text;
+}
+
+.infoTitle {
+    font-size: large;
+    color: white;
+}
+
+.value {
+    font-size: larger;
+
+}
+.column-1 {
+    grid-area: column1;
+    margin-left: 1em;
+}
+
+.column-2 {
+    grid-area: column2
+}
+
+.column-3 {
+    grid-area: column3;
+    margin-left: 1em;
+}
+
+.column-4 {
+    grid-area: column4
+}
+
+.statTitle {
+    margin: 2em auto 0 auto;
+    width: 35.55em;
+    height: 3em;
+    font-size: large;
+    padding: 0.5em;
+    background-color: #a7db8d;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.pokemonStat {
+    margin: 0 auto 2em auto;
+    width: 40em;
+    height: 18em;
+    font-weight: bold;
+    background-color: #a7db8d;
+    display: grid;
+    grid-template-columns: 33% 67% ;
+    grid-template-areas:
+    "stat1 bar1 "
+    "stat2 bar2 "
+    "stat3 bar3 "
+    "stat4 bar4 "
+    "stat5 bar5 "
+    "stat6 bar6 "
+}
+
+.bar {
+    margin: 0 0.5em 0.5em 0.5em;
+    height: 2em;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    padding: 0.2em;
+}
+
+.valuebar {
+    height: 100%;
+}
+
+.valuebar1 {
+    width: 5em;
+    background-color: #ff0000;
+}
+
+.valuebar2 {
+    width: 7.5em;
+    background-color: #f08030;
+}
+
+.valuebar3 {
+    width: 6.2em;
+    background-color: #f8d030;
+}
+
+.valuebar4 {
+    width: 8.5em;
+    background-color: #6890f0;
+}
+
+.valuebar5 {
+    width: 7.2em;
+    background-color: #78c850;
+}
+
+.valuebar6 {
+    width: 9em;
+    background-color: #f85888;
+}
+
+.stat1 {
+    grid-area: stat1;
+    background-color: #ff5959;
+}
+
+.bar1 {
+    grid-area: bar1;
+    background-color: #ff5959 ;
+}
+
+.stat2 {
+    grid-area: stat2;
+    background-color: #f5ac78;
+}
+
+.bar2 {
+    grid-area: bar2;
+    background-color: #f5ac78;
+}
+
+.stat3 {
+    grid-area: stat3;
+    background-color: #fae078;
+}
+
+.bar3 {
+    grid-area: bar3;
+    background-color: #fae078 ;
+}
+
+.stat4 {
+    grid-area: stat4;
+    background-color: #9db7f5;
+}
+
+.bar4 {
+    grid-area: bar4;
+    background-color: #9db7f5 ;
+}
+
+.stat5 {
+    grid-area: stat5;
+    background-color: #a7db8d;
+}
+
+.bar5 {
+    grid-area: bar5;
+    background-color: #a7db8d ;
+}
+
+.stat6 {
+    grid-area: stat6;
+    background-color: #fa92b2;
+}
+
+.bar6 {
+    grid-area: bar6;
+    background-color: #fa92b2 ;
+}
