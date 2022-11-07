@@ -1,0 +1,223 @@
+/*Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*General Page Style Setings*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    background-color: #add8e6;
+}
+
+/*Navbar*/
+
+.navbar {
+    background-color: rgb(148, 253, 218);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.navLinks {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.navLinks li {
+    margin-left: 2em;
+}
+
+.navLink {
+    border-radius: 0.2em;
+    transition-duration: 0.3s;
+}
+
+.navLink:hover {
+    transition-duration: 0.3s;
+    padding: 0.3em;
+    background-color: #ebd272;
+}
+
+/*Pokemon Bar */
+
+.pokemonBar{
+    background-color: rgb(180, 255, 52);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 2em 0.7em 2em;
+    font-size: larger;
+}
+
+/* Pokemon Card */
+
+.content{
+    height: 70vh;
+}
+
+.pokemonCard{
+    width: 20vw;
+    height: 43vh;
+    background-color: rgb(125, 171, 245);
+    border-radius: 1vw;
+    margin-top: 4vh; 
+    margin-left: 40vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.pokemonImage{
+    width: 18vw;
+    height: 38vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    background-color: white;
+    border-radius: 0.2vw;
+}
+
+.aboutPokemon{
+    width: 20vw;
+    height: 10vh;
+    margin-left: 3vh;
+    margin-top: 4vh;
+    font-size: large;
+}
+
+.height, .weight, .category, .abilities{
+    width: 8vw;
+    margin-top: 5vh;
+    margin-left: 3vh;
+    float: left;
+    font-size: large;
+}
+
+.title{
+    color: white;
+    font-size: large;
+}
+
+.pokemonCard:hover{
+    transition-duration: 1.2s;
+    width: 40vw;
+    margin-left: 30vw;
+}
+
+/* Pokemon Status */
+
+.pokemonStatus{
+    background-color: rgb(157, 251, 157);
+    width: 40vw;
+    height: 30vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.status{
+    text-align: center;
+}
+
+#status{
+    padding: 0.5vh;
+}
+
+.hp, .attack, .defense, .spAtk, .spDef, .speed{
+    width: 8vw;
+    height: 4vh;
+    margin-left: 0.5vh;
+    margin-top: 0.3vh;
+}
+
+.hpStatus, .attackStatus, .defenseStatus, .spAtkStatus, .spDefStatus, .speedStatus{
+    width: 31.2vw;
+    height: 4vh;
+    margin-left: 0.5vh;
+    margin-top: 0.3vh;
+}
+
+.hp, .hpStatus{
+    background-color: rgb(253, 123, 123);
+}
+
+.attack, .attackStatus{
+    background-color: rgb(253, 181, 123);
+}
+
+.defense, .defenseStatus{
+    background-color: rgb(255, 249, 189);
+}
+
+.spAtk, .spAtkStatus{
+    background-color: rgb(151, 194, 255);
+}
+
+.spDef, .spDefStatus{
+    background-color: rgb(98, 187, 117);
+}
+
+.speed, .speedStatus{
+    background-color: rgb(255, 148, 214);
+}
+
+.hpSecondStatus, .attackSecondStatus, .defenseSecondStatus, .spAtkSecondStatus, .spDefSecondStatus, .speedSecondStatus{
+    height: 4vh;
+}
+
+.hpSecondStatus, .spAtkSecondStatus{
+    width: 6vw;
+}
+
+.hpSecondStatus{
+    background-color: rgb(254, 0, 0);
+}
+
+.spAtkSecondStatus{
+    background-color: rgb(0, 106, 255);
+}
+
+.attackSecondStatus{
+    background-color: rgb(246, 112, 39);
+    width: 12vw;
+}
+
+.defenseSecondStatus, .spDefSecondStatus{
+    width: 8vw;
+}
+
+.defenseSecondStatus{
+    background-color: rgb(255, 247, 0);
+}
+
+.spDefSecondStatus{
+    background-color: rgb(0, 181, 39);
+}
+
+.speedSecondStatus{
+    background-color: rgb(255, 20, 165);
+    width: 15vw;
+}
+
+.stat{
+    float: left;
+}
+
+.titleStatus{
+    text-align: center;
+    margin-top: 0.7vh;
+}
