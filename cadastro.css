@@ -89,8 +89,13 @@ body {
     height: 2em;
     border-radius: 0.8em;
     border: solid rgb(60, 111, 171) 0.2em;
+    outline: 0;
     margin-top: 0.2em;
     padding: 1em;
+}
+
+.formInput:focus {
+    border-color: rgb(255, 166, 0);
 }
 
 .submit {
